@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1535A1BE298250DE00FF398F /* LearnMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535A1BD298250DE00FF398F /* LearnMVVMApp.swift */; };
-		1535A1C0298250DE00FF398F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535A1BF298250DE00FF398F /* ContentView.swift */; };
+		1535A1C0298250DE00FF398F /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535A1BF298250DE00FF398F /* RecipeView.swift */; };
 		1535A1C2298250E100FF398F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1535A1C1298250E100FF398F /* Assets.xcassets */; };
 		1535A1C5298250E100FF398F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1535A1C4298250E100FF398F /* Preview Assets.xcassets */; };
+		1535A1CF2982526D00FF398F /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535A1CE2982526D00FF398F /* RecipeModel.swift */; };
+		1535A1D12982539100FF398F /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535A1D02982539100FF398F /* RecipeViewModel.swift */; };
+		1535A1D3298254F300FF398F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535A1D2298254F300FF398F /* ListItemView.swift */; };
+		1535A1D529825D9A00FF398F /* ShowRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1535A1D429825D9A00FF398F /* ShowRecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1535A1BA298250DE00FF398F /* LearnMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1535A1BD298250DE00FF398F /* LearnMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMVVMApp.swift; sourceTree = "<group>"; };
-		1535A1BF298250DE00FF398F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1535A1BF298250DE00FF398F /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		1535A1C1298250E100FF398F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1535A1C4298250E100FF398F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1535A1CE2982526D00FF398F /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		1535A1D02982539100FF398F /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		1535A1D2298254F300FF398F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		1535A1D429825D9A00FF398F /* ShowRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		1535A1BC298250DE00FF398F /* LearnMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1535A1CD2982521C00FF398F /* ViewModel */,
+				1535A1CC2982521400FF398F /* Model */,
+				1535A1CB2982520C00FF398F /* Views */,
 				1535A1BD298250DE00FF398F /* LearnMVVMApp.swift */,
-				1535A1BF298250DE00FF398F /* ContentView.swift */,
 				1535A1C1298250E100FF398F /* Assets.xcassets */,
 				1535A1C3298250E100FF398F /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				1535A1C4298250E100FF398F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1535A1CB2982520C00FF398F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1535A1BF298250DE00FF398F /* RecipeView.swift */,
+				1535A1D2298254F300FF398F /* ListItemView.swift */,
+				1535A1D429825D9A00FF398F /* ShowRecipeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1535A1CC2982521400FF398F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1535A1CE2982526D00FF398F /* RecipeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1535A1CD2982521C00FF398F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1535A1D02982539100FF398F /* RecipeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1535A1C0298250DE00FF398F /* ContentView.swift in Sources */,
+				1535A1D3298254F300FF398F /* ListItemView.swift in Sources */,
+				1535A1D529825D9A00FF398F /* ShowRecipeView.swift in Sources */,
+				1535A1D12982539100FF398F /* RecipeViewModel.swift in Sources */,
+				1535A1C0298250DE00FF398F /* RecipeView.swift in Sources */,
 				1535A1BE298250DE00FF398F /* LearnMVVMApp.swift in Sources */,
+				1535A1CF2982526D00FF398F /* RecipeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
